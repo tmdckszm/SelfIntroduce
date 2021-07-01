@@ -2,6 +2,20 @@ const content = "Hi. I'm Seung Chan, \n front-end developer.";
 const text = document.querySelector(".animation_text");
 let index = 0;
 
+
+const showClock = () =>{
+    var clock = document.querySelector(".clock");
+    var currnetTime = new Date();
+    var msg ="KST" + currnetTime.getHours()+":";
+    msg += currnetTime.getMinutes()+":";
+    msg += currnetTime.getSeconds();
+
+    clock.innerText = msg;
+    setTimeout(showClock, 1000);
+
+}
+
+
 const typing = ()=>{
     let txt = content[index++];
     text.innerHTML += txt ==="\n" ? "<br/>" : txt;

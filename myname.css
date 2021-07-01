@@ -9,6 +9,7 @@
     margin: -21px;
     transition: all 1s ease-in-out;
     opacity: 1;
+    position: relative;
 }
 
 .active{
@@ -44,11 +45,38 @@ header{
     font-weight: bold;
 }
 
+.clock{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 37%;
+    top: 55%;
+    letter-spacing: 18px;
+}
+
 .animation_text{
     color: white;
-    text-align: center;
-    margin-top: 300px;
     font-size: 50px;
+    position: absolute;
+    left: 37%;
+    top: 30%;
+}
+
+#info{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 39%;
+    top: 68%;
+}
+
+#info::before{
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    color: white;
+    margin: 0 10px 0 0;
 }
 
 #profile_2{
